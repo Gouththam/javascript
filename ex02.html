@@ -1,0 +1,89 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+var type = [];
+var type = new Array();
+
+
+var number = [10,50,40,60,80];
+function max(){
+  var high = number[1];
+  for(i=0; i<number.length; i++){
+    if(high <= number[i]){
+      high = number[i];
+    }
+  }
+  document.write("Max: ")
+  document.write(high + "<br>" + "<br>")
+}
+max();
+
+function min(){
+  var low = number[1];
+  for(i=0; i<= number.length; i++){
+    if(low >= number[i]){
+      low = number[i];
+    }
+  }
+  document.write("Min: ")
+  document.write(low + "<br>" + "<br>");
+}
+min();
+
+var fruits = ["Apple","Banana"];
+fruits.splice(1, 0,"mango","Orange","Lemon","Grape","Apricot");
+document.write(fruits + "<br>" + "<br>");
+
+
+document.write(fruits[2] + "<br>" +"<br>");
+
+
+
+for (i = fruits.length-1; i >= 0; i--){
+  document.write(fruits[i] + "," );
+
+}
+
+document.write("<br>"+"<br>")
+
+var num = [4,1,8,3,9,12];
+num.sort(function(x,y){
+  return x - y;
+});
+document.write(num + "<br>"+"<br>");
+
+
+var foods = ["rice", "pizza", "sandwich", "rolls"];
+ foods.pop();
+ foods.pop();
+ document.write(foods + "<br>");
+
+ foods.push("cake");
+ document.write(foods + "<br>");
+
+ foods.shift();
+ document.write(foods + "<br>"+"<br>");
+
+var fruits = ["Apple"];
+fruits.splice(0,0,"Pineapple" , "Lemon");
+document.write(fruits + "<br>");
+fruits.splice(3,0,"Orange", "Peach");
+document.write(fruits);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
